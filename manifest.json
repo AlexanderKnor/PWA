@@ -1,0 +1,37 @@
+{
+    "name": "Meine PWA Beispielanwendung",
+    "short_name": "Meine PWA",
+    "description": "Eine einfache Progressive Web App als Beispiel",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#4285f4",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "icons/icon-192x192.png",
+            "type": "image/png",
+            "sizes": "192x192",
+            "purpose": "any"
+        },
+        {
+            "src": "icons/icon-512x512.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "any"
+        },
+        {
+            "src": "icons/icon-maskable.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "maskable"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "icons/screenshot.png",
+            "type": "image/png",
+            "sizes": "540x720"
+        }
+    ]
+}

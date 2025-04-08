@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4285f4">
+    <title>Meine PWA</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="icons/icon-192x192.png">
+    <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+</head>
+
+<body>
+    <div class="app">
+        <header>
+            <h1>Meine PWA</h1>
+        </header>
+
+        <main>
+            <div class="card">
+                <h2>Willkommen zum Home-Screen</h2>
+                <p>Dies ist eine einfache Progressive Web App (PWA), die Sie auf Ihrem Gerät installieren können.</p>
+                <div id="install-button-container">
+                    <button id="install-button" class="hidden">App installieren</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Funktionen</h2>
+                <ul>
+                    <li>Installierbar auf dem Startbildschirm</li>
+                    <li>Funktioniert offline</li>
+                    <li>Responsives Design</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>Interaktives Element</h2>
+                <p>Klicken Sie auf den Button, um eine Nachricht zu erhalten:</p>
+                <button id="action-button">Klick mich</button>
+                <p id="message-output"></p>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2025 Meine PWA Beispielanwendung</p>
+        </footer>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script>
+        // Service Worker registrieren
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('js/service-worker.js')
+                    .then(reg => console.log('Service Worker registriert!', reg))
+                    .catch(err => console.error('Service Worker Fehler:', err));
+            });
+        }
+    </script>
+</body>
+
+</html>
