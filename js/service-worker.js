@@ -3,14 +3,14 @@ const CACHE_NAME = 'pwa-beispiel-v1';
 
 // Dateien, die beim Installieren des Service Workers gecacht werden sollen
 const FILES_TO_CACHE = [
-    '/',
-    '/index.html',
-    '/css/styles.css',
-    '/js/app.js',
-    '/manifest.json',
-    '/icons/icon-192x192.png',
-    '/icons/icon-512x512.png',
-    '/icons/icon-maskable.png'
+    './',
+    './index.html',
+    './css/styles.css',
+    './js/app.js',
+    './manifest.json',
+    './icons/icon-192x192.png',
+    './icons/icon-512x512.png',
+    './icons/icon-maskable.png'
 ];
 
 // Service Worker Installation
